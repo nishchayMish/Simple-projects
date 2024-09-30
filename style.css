@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(72, 49, 32);
+}
+
+nav .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .left h2{
+    font-size: 2.5vw;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+
+nav .right form{
+    display: flex;
+    gap: 15px;
+}
+
+nav .right form input{
+    font-size: 1.2vw;
+    padding: 0 0.5vw;
+    border: none;
+    border-radius: 4px;
+}
+
+nav .right form button{
+    padding: 0.6vw 2vw;
+    border-radius: 4px;
+    border: none;
+    background-color: chocolate;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1.2vw;
+    &:hover{
+        background-color: rgb(170, 81, 17);
+        cursor: pointer;
+    }
+}
+
+main{
+    background-color: rgba(148, 106, 75, 0.767);
+    width: 100%;
+    min-height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:500px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .left h2{
+        font-size: 7.5vw;
+    }
+    nav .left img{
+        height: 45px;
+    }
+    nav .right form input{
+        font-size: 4.2vw;
+        padding: 1vw;
+    }
+    nav .right form button{
+        font-size: 3vw;
+        padding: 2vw;
+    }
+}
