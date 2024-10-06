@@ -1,5 +1,5 @@
 function navAnimation(){
-    var tl = gsap.timeline()
+    let tl = gsap.timeline()
 
     tl.from("nav .left",{
         opacity:0,
@@ -14,3 +14,4 @@ function navAnimation(){
     })
 }
 navAnimation();
+
